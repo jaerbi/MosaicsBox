@@ -1,0 +1,37 @@
+<div class="wrapJ">
+    <p>Look this Box</p>
+    <input
+            type="text"
+            ng-model="model.value"
+            placeholder="type color" />
+
+
+
+    <input ng-repeat="i in model.colors" type="color" ng-model="i.color">
+    <button class="button" ng-click="startBox()">Start</button>
+
+    <div class="boxColor">
+        <ul ng-repeat="i in getNumber(number) track by $index">
+            <li class="boxLi">
+                <jaerbi-box-q model="model" startBox="startBox()"></jaerbi-box-q>
+            </li>
+        </ul>
+    </div>
+    <h1>
+        HELLO from
+        <br/>
+        <span ng-style="{color: colorT}">
+            {{name}}
+            <span>{{colorT}}</span>
+        </span>
+        <br/>
+        <span ng-style="{color: colorT2}">
+            {{name2}}
+            <span>{{colorT2}}</span>
+        </span>
+
+    </h1>
+
+    <button class="button" ng-click="changeColor()">Push this</button>
+</div>
+

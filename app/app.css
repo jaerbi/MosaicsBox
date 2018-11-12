@@ -1,0 +1,64 @@
+/* app css stylesheet */
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+input {
+    outline: 0;
+    margin: 2px;
+    padding: 4px;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li + li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.wrapJ {
+    margin: 0 0 20px 20px;
+}
+
+.button {
+    padding: 10px 15px;
+    color: #f4f4f4;
+    background: crimson;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.boxQ {
+    height: 15px;
+    width: 15px;
+}
+.boxColor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+}
+.boxS {
+    height: 10px;
+    width: 80px;
+    position: absolute;
+}
+
+.boxLi, ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
